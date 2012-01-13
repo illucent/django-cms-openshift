@@ -14,7 +14,7 @@ class Command(NoArgsCommand):
             u.is_superuser = True
             u.is_staff = True
             u.save()
-            print("admin user has been created with a password of %s, " \
+            print("admin user has been created with a password of '%s', " \
                    "please login to admin and change right away." % password)
         else:
             print("admin user already created.")
