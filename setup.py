@@ -13,6 +13,6 @@ setup(
                       'PIL==1.1.7', 
                       'django-cms==2.2', 
                       'south==0.7.2', 
-                      #'MySQL-python==1.2.3'
+                      'MySQL-python==1.2.3'
                       ],
 )
