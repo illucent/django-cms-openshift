@@ -5,3 +5,4 @@
 # could be python, php, ruby, etc.
 PYTHON_EGG_CACHE = $OPENSHIFT_APP_DIR/virtenv/lib/python2.6/site-packages
 export PYTHON_EGG_CACHE
+export
