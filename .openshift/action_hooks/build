@@ -6,8 +6,8 @@
 export
 
 source $OPENSHIFT_APP_DIR/virtenv/bin/activate
-PYTHON_EGG_CACHE = $OPENSHIFT_APP_DIR/virtenv/lib/python2.6/site-packages
-export PYTHON_EGG_CACHE
+export PYTHON_EGG_CACHE=${OPENSHIFT_APP_DIR}virtenv/lib/python2.6/site-packages
+env
 
 if [ ! -f $OPENSHIFT_DATA_DIR/sqlite3.db ]
 then
