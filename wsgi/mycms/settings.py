@@ -28,11 +28,11 @@ if ON_OPENSHIFT:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'blog',  # Or path to database file if using sqlite3.
-            'USER': 'admin', #os.environ['OPENSHIFT_DB_USERNAME'],                      # Not used with sqlite3.
-            'PASSWORD': 'MSqy4jy6jcv5', #os.environ['OPENSHIFT_DB_PASSWORD'],                  # Not used with sqlite3.
-            'HOST': '127.1.30.1',  #os.environ['OPENSHIFT_DB_HOST'],                      # Set to empty string for localhost. Not used with sqlite3.
-            'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+            'NAME': os.environ['OPENSHIFT_APP_NAME'],  # Or path to database file if using sqlite3.
+            'USER': os.environ['OPENSHIFT_DB_USERNAME'],                      # Not used with sqlite3.
+            'PASSWORD': os.environ['OPENSHIFT_DB_PASSWORD'],                  # Not used with sqlite3.
+            'HOST': os.environ['OPENSHIFT_DB_HOST'],                      # Set to empty string for localhost. Not used with sqlite3.
+            'PORT': os.environ['OPENSHIFT_DB_PORT'],                      # Set to empty string for default. Not used with sqlite3.
         }
     }
 else:
