@@ -31,7 +31,7 @@ if ON_OPENSHIFT:
             'NAME': 'blog',  # Or path to database file if using sqlite3.
             'USER': 'admin', #os.environ['OPENSHIFT_DB_USERNAME'],                      # Not used with sqlite3.
             'PASSWORD': 'MSqy4jy6jcv5', #os.environ['OPENSHIFT_DB_PASSWORD'],                  # Not used with sqlite3.
-            'HOST': '/var/lib/libra//4384c12f4a6a4cefa886e07e68d866c3//mysql-5.1//socket/mysql.sock', #os.environ['OPENSHIFT_DB_HOST'],                      # Set to empty string for localhost. Not used with sqlite3.
+            'HOST': '127.1.30.1', #os.environ['OPENSHIFT_DB_HOST'],                      # Set to empty string for localhost. Not used with sqlite3.
             'PORT': "3306",                      # Set to empty string for default. Not used with sqlite3.
         }
     }
