@@ -148,7 +148,6 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
-    'gunicorn',
 )
 
 # A sample logging configuration. The only tangible logging
