@@ -22,5 +22,5 @@ fi
 echo "Executing 'python ${OPENSHIFT_REPO_DIR}wsgi/mycms/manage.py collectstatic --noinput'"
 python ${OPENSHIFT_REPO_DIR}wsgi/mycms/manage.py collectstatic --noinput
 
-echo "Making an Admin account if it doesn't exist already."
-python ${OPENSHIFT_REPO_DIR}wsgi/mycms/mkadmin.py
+echo "Checking to see if you need to create an Admin account."
+python ${OPENSHIFT_REPO_DIR}wsgi/mycms/manage.py make_admin
