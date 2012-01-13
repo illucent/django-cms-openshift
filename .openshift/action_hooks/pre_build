@@ -3,6 +3,5 @@
 # available.  Otherwise it will execute while your application is stopped
 # before the build step.  This script gets executed directly, so it
 # could be python, php, ruby, etc.
-PYTHON_EGG_CACHE = $OPENSHIFT_APP_DIR/virtenv/lib/python2.6/site-packages
-export PYTHON_EGG_CACHE
-export
+export PYTHON_EGG_CACHE=$OPENSHIFT_APP_DIR/virtenv/lib/python2.6/site-packages
+env
