@@ -12,7 +12,7 @@ login to the django admin and change the password.
 
 This repo was inspired by https://github.com/openshift/django-example and http://blog.ianweller.org/2011/05/12/openshift-express-first-thoughts/ Check them out, they were very helpful to me.
 
-For more details, I have written a full blog post covering all of these steps in more detail at http://KenCochrane.net
+For more details, I have written a full blog post covering all of these steps in more detail at http://kencochrane.net/blog/2012/01/installing-django-application-on-openshift/
 
 Running on OpenShift
 ----------------------------
